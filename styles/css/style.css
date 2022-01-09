@@ -53,6 +53,24 @@
     width: 1170px;
   }
 }
+@media (max-width: 650px) {
+  .gameBtns {
+    flex-direction: column;
+  }
+}
+@media (max-width: 395px) {
+  .title {
+    font-size: 18px;
+  }
+
+  .players h2 {
+    font-size: 16px;
+  }
+
+  .rtxt {
+    font-size: 12px;
+  }
+}
 .box {
   background-color: #e498e4;
   color: #222;

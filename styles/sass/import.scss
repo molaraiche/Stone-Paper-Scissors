@@ -1,4 +1,5 @@
 @use "./reset";
+@use "./media";
 .box {
   background-color: rgb(228, 152, 228);
   color: #222;
@@ -66,7 +67,6 @@
   .gameBtns {
     display: flex;
     align-items: center;
-
     height: 10vh;
     justify-content: space-around;
     button {

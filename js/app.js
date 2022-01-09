@@ -2,9 +2,9 @@
 const TPT = document.querySelector(".TPT");
 const TPO = document.querySelector(".TPO");
 const start = document.querySelector(".play");
-const save = document.querySelector(".save");
 const reset = document.querySelector(".reset");
 const result = document.querySelector(".rtxt");
+
 // Set the game logique
 
 let stone = 1;
@@ -20,13 +20,7 @@ let RPOT = document.querySelector(".RPO");
 let RPTT = document.querySelector(".RPT");
 let RPO = 0;
 let RPT = 0;
-/* 1<2
-  1<3
-  2>1
-  2<3
-  3>1
-  3>2
-   */
+
 // Set Events
 start.addEventListener("click", (e) => {
   shuffleOne = Math.trunc(Math.random() * 3) + 1;
@@ -34,7 +28,7 @@ start.addEventListener("click", (e) => {
   TPO.src = `../img/${shuffleOne}.jpg`;
   TPT.src = `../img/${shuffleTwo}.jpg`;
 
-  // logiqu :o
+  // logique :o
 
   if (shuffleOne === shuffleTwo) {
     result.textContent = "Draw";
